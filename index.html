@@ -1,28 +1,370 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Adega 27</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="description" content="FriendCharge — Energia para seus dispositivos. Conexão para sua turma. Powerbank inteligente, caixa de som Bluetooth, localização compartilhada e alarme sonoro em um único dispositivo.">
+    <title>FriendCharge — Energia e conexão em um único dispositivo</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Adega 27</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="produtos.html">Vinhos</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="brand" aria-label="FriendCharge — início">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                        <circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M3 19c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M13 19c0-2.8 2.2-5 5-5s3 1 3 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">FriendCharge</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Navegação principal">
+                <a href="#solucao">Recursos</a>
+                <a href="#personas">Histórias</a>
+                <a href="#diferenciais">Comparativo</a>
+                <a href="#preco">Preço</a>
+            </nav>
+
+            <a href="#preco" class="btn btn-pill nav-cta">Comprar</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-mobile" id="navMobile">
+            <a href="#solucao">Recursos</a>
+            <a href="#personas">Histórias</a>
+            <a href="#diferenciais">Comparativo</a>
+            <a href="#preco">Preço</a>
+            <a href="#preco" class="btn btn-pill">Comprar Agora</a>
+        </div>
     </header>
 
-    <section class="destaque">
-        <h2>Bem-vindo à Adega 27</h2>
-        <p>Uma seleção especial de vinhos para momentos inesquecíveis.</p>
+    <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow reveal">Conheça o FriendCharge</p>
+                <h1 class="hero-title reveal">FriendCharge</h1>
+                <p class="hero-sub reveal">Energia, conexão e pertencimento<br>em um único dispositivo.</p>
+                <p class="hero-desc reveal">Mantenha sua bateria carregada, encontre seus amigos e aproveite cada momento sem interrupções.</p>
+                <div class="hero-actions reveal">
+                    <a href="#preco" class="btn btn-primary">Comprar Agora</a>
+                    <a href="#solucao" class="btn btn-ghost">Conhecer Recursos <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-device" data-tilt>
+                    <div class="device-body">
+                        <span class="device-logo">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                                <circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M3 19c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M13 19c0-2.8 2.2-5 5-5s3 1 3 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                            FriendCharge
+                        </span>
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="device-leds" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                        <div class="device-strap" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <p class="hero-caption">10.000 mAh · Bluetooth · GPS · Alarme</p>
+            </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true"><span></span></div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Adega 27. Todos os direitos reservados.</p>
+    <!-- ===================== SEÇÃO 1 — O PROBLEMA ===================== -->
+    <section class="section problem" id="problema">
+        <div class="container">
+            <h2 class="section-title reveal">A geração mais conectada<br>também é a que mais se desencontra.</h2>
+
+            <div class="problem-grid">
+                <article class="problem-card reveal">
+                    <span class="problem-icon" aria-hidden="true">🔋</span>
+                    <h3>Bateria acabando</h3>
+                    <p>O celular morre na hora mais importante da noite.</p>
+                </article>
+                <article class="problem-card reveal">
+                    <span class="problem-icon" aria-hidden="true">👥</span>
+                    <h3>Amigos perdidos</h3>
+                    <p>A turma some no meio da multidão e ninguém se acha.</p>
+                </article>
+                <article class="problem-card reveal">
+                    <span class="problem-icon" aria-hidden="true">🎒</span>
+                    <h3>Muitos acessórios</h3>
+                    <p>Powerbank, caixa de som, cabos… bagagem demais.</p>
+                </article>
+                <article class="problem-card reveal">
+                    <span class="problem-icon" aria-hidden="true">📍</span>
+                    <h3>Falta de praticidade</h3>
+                    <p>Soluções separadas que nunca conversam entre si.</p>
+                </article>
+            </div>
+
+            <p class="problem-quote reveal">"Conexão não deveria depender da sorte."</p>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 2 — A SOLUÇÃO ===================== -->
+    <section class="section solution" id="solucao">
+        <div class="container">
+            <p class="eyebrow center reveal">A solução</p>
+            <h2 class="section-title center reveal">Tudo o que você precisa<br>em um único dispositivo.</h2>
+
+            <div class="solution-hero reveal">
+                <div class="hero-device big" data-tilt>
+                    <div class="device-body">
+                        <span class="device-logo">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                                <circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M3 19c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M13 19c0-2.8 2.2-5 5-5s3 1 3 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                            FriendCharge
+                        </span>
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="device-leds" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                        <div class="device-strap" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card reveal">
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                    </span>
+                    <h3>Powerbank Inteligente</h3>
+                    <p>Bateria de 10.000 mAh com carga rápida. Carrega até 3 dispositivos simultaneamente.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 9v6h4l5 4V5L8 9H4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M16 8a5 5 0 010 8M18.5 5.5a9 9 0 010 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                    </span>
+                    <h3>Caixa Bluetooth</h3>
+                    <p>Música compartilhada em qualquer lugar. Som de alta qualidade e até 8h de reprodução.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg>
+                    </span>
+                    <h3>Localização Compartilhada</h3>
+                    <p>Veja onde sua turma está em tempo real, com consentimento e dados criptografados.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10.5 21a2 2 0 003 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                    </span>
+                    <h3>Alarme Sonoro</h3>
+                    <p>Encontre rapidamente seu FriendCharge com um toque no app. Tons personalizáveis.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 3 — BENEFÍCIOS / NÚMEROS ===================== -->
+    <section class="section stats" id="beneficios">
+        <div class="container stats-grid">
+            <div class="stat reveal">
+                <span class="stat-num" data-count="3">3</span>
+                <span class="stat-label">dispositivos carregados simultaneamente</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num" data-count="1">1</span>
+                <span class="stat-label">aplicativo para localizar toda a turma</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+                <span class="stat-label">mais praticidade para eventos e viagens</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 4 — PERSONAS ===================== -->
+    <section class="section personas" id="personas">
+        <div class="container">
+            <p class="eyebrow center reveal">Feito para você</p>
+            <h2 class="section-title center reveal">Histórias que cabem no seu bolso.</h2>
+
+            <div class="persona-grid">
+                <article class="persona-card reveal">
+                    <div class="persona-photo persona-pedro" aria-hidden="true"><span>P</span></div>
+                    <div class="persona-body">
+                        <h3>Pedro</h3>
+                        <p class="persona-meta">20 anos · Engenharia</p>
+                        <p class="persona-quote">"Nas viagens com a galera, o FriendCharge mantém todo mundo carregado e junto."</p>
+                    </div>
+                </article>
+                <article class="persona-card reveal">
+                    <div class="persona-photo persona-mariana" aria-hidden="true"><span>M</span></div>
+                    <div class="persona-body">
+                        <h3>Mariana</h3>
+                        <p class="persona-meta">22 anos · Medicina</p>
+                        <p class="persona-quote">"Entre plantões e estudos, nunca mais fiquei sem bateria nem sem achar minhas amigas."</p>
+                    </div>
+                </article>
+                <article class="persona-card reveal">
+                    <div class="persona-photo persona-ana" aria-hidden="true"><span>A</span></div>
+                    <div class="persona-body">
+                        <h3>Ana</h3>
+                        <p class="persona-meta">21 anos · Design</p>
+                        <p class="persona-quote">"Nas festas eu vejo onde todos estão e ainda carrego o celular. Diversão com segurança."</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 5 — EXPERIÊNCIA ===================== -->
+    <section class="section experience" id="experiencia">
+        <div class="exp-parallax" aria-hidden="true"></div>
+        <div class="container exp-content">
+            <h2 class="exp-title reveal">Projetado para acompanhar<br>seus melhores momentos.</h2>
+            <div class="exp-tags reveal">
+                <span>Festivais</span>
+                <span>Viagens</span>
+                <span>Universidade</span>
+                <span>Amigos reunidos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 6 — DIFERENCIAIS ===================== -->
+    <section class="section compare" id="diferenciais">
+        <div class="container">
+            <p class="eyebrow center reveal">Por que o FriendCharge</p>
+            <h2 class="section-title center reveal">Não é só um powerbank.</h2>
+
+            <div class="compare-table reveal">
+                <div class="compare-row compare-head">
+                    <div class="compare-cell feature">Funcionalidade</div>
+                    <div class="compare-cell">Powerbank comum</div>
+                    <div class="compare-cell highlight">FriendCharge</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell feature">Carregamento</div>
+                    <div class="compare-cell"><span class="yes">✓</span></div>
+                    <div class="compare-cell highlight"><span class="yes">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell feature">Caixa Bluetooth</div>
+                    <div class="compare-cell"><span class="no">✕</span></div>
+                    <div class="compare-cell highlight"><span class="yes">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell feature">Localização compartilhada</div>
+                    <div class="compare-cell"><span class="no">✕</span></div>
+                    <div class="compare-cell highlight"><span class="yes">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell feature">Alarme sonoro</div>
+                    <div class="compare-cell"><span class="no">✕</span></div>
+                    <div class="compare-cell highlight"><span class="yes">✓</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 7 — PREÇO ===================== -->
+    <section class="section pricing" id="preco">
+        <div class="container">
+            <p class="eyebrow center reveal">Um produto. Três soluções.</p>
+            <h2 class="section-title center reveal">Tudo isso por um preço justo.</h2>
+
+            <div class="price-card reveal">
+                <div class="price-glow" aria-hidden="true"></div>
+                <span class="price-badge">Mais vendido</span>
+                <h3 class="price-name">FriendCharge</h3>
+                <p class="price-tag"><span class="currency">R$</span>199<span class="cents">,90</span></p>
+                <p class="price-installment">ou 12x de R$ 16,66 sem juros</p>
+                <ul class="price-list">
+                    <li>Powerbank 10.000 mAh · 3 dispositivos</li>
+                    <li>Caixa de som Bluetooth integrada</li>
+                    <li>Localização compartilhada segura</li>
+                    <li>Alarme sonoro inteligente</li>
+                    <li>Cabo USB-C e embalagem ecológica</li>
+                </ul>
+                <a href="#cta" class="btn btn-primary btn-block">Comprar Agora</a>
+                <p class="price-note">4 cores vibrantes · Permitido em viagens aéreas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 8 — CTA FINAL ===================== -->
+    <section class="section final-cta" id="cta">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="container cta-inner">
+            <h2 class="cta-title reveal">Nunca perca seus amigos.<br>Nunca fique sem bateria.</h2>
+            <p class="cta-desc reveal">O FriendCharge foi criado para conectar pessoas e experiências.</p>
+            <a href="#preco" class="btn btn-primary btn-lg reveal">Quero meu FriendCharge</a>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                            <circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M3 19c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M13 19c0-2.8 2.2-5 5-5s3 1 3 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">FriendCharge</span>
+                </span>
+                <p class="footer-tagline">Energia para seus dispositivos.<br>Conexão para sua turma.</p>
+            </div>
+            <nav class="footer-cols" aria-label="Rodapé">
+                <div class="footer-col">
+                    <h4>Produto</h4>
+                    <a href="#solucao">Recursos</a>
+                    <a href="#diferenciais">Comparativo</a>
+                    <a href="#preco">Preço</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <a href="#problema">Sobre</a>
+                    <a href="#personas">Histórias</a>
+                    <a href="#cta">Contato</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <a href="#" target="_blank" rel="noopener">Instagram</a>
+                    <a href="#" target="_blank" rel="noopener">TikTok</a>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FriendCharge. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
