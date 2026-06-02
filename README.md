@@ -1,59 +1,52 @@
-<header>
+# FriendCharge — Landing Page
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Landing page premium (estilo Apple / Nothing) para o **FriendCharge**, um dispositivo
+multifuncional que combina **powerbank inteligente**, **caixa de som Bluetooth**,
+**localização compartilhada** entre amigos e **alarme sonoro**.
 
-# GitHub Pages
+> _"Energia para seus dispositivos. Conexão para sua turma."_
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## Tecnologia
 
-</header>
+Site estático em **HTML + CSS + JavaScript** puro — sem build, sem dependências.
+Funciona direto no GitHub Pages ou em qualquer servidor estático.
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
--->
+| Arquivo        | Descrição                                          |
+|----------------|----------------------------------------------------|
+| `index.html`   | Página única com todas as seções                   |
+| `estilos.css`  | Estilos premium, responsivos (mobile-first)        |
+| `app.js`       | Scroll reveal, contadores, parallax e tilt 3D      |
 
-## Step 2: Configure your site
+## Seções
 
-_You turned on GitHub Pages! :tada:_
+1. **Hero** — apresentação do produto com mockup 3D animado
+2. **O Problema** — dores da geração conectada
+3. **A Solução** — 4 recursos principais
+4. **Benefícios** — números de impacto com contadores animados
+5. **Personas** — Pedro, Mariana e Ana
+6. **Experiência** — cenários com parallax suave
+7. **Diferenciais** — comparativo vs. powerbank comum
+8. **Preço** — R$ 199,90 (12x de R$ 16,66)
+9. **CTA final** + rodapé
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+## Identidade visual
 
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+- Tipografia: **Poppins** (Google Fonts)
+- Cores: `#FF2E88` · `#FF5BA8` · `#0A0A0A` · `#1A1A1A` · `#FFFFFF`
 
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+## Rodar localmente
 
-### :keyboard: Activity: Configure your site
+```bash
+python3 -m http.server 8000
+# abra http://localhost:8000
+```
 
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
-   ```yml
-   theme: minima
-   ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+## Imagens reais (opcional)
 
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Os mockups do dispositivo são renderizados em CSS. Para usar as fotos oficiais do
+produto, adicione-as em `assets/` e substitua os blocos `.device-body` / `.persona-photo`
+por `<img>` apontando para os arquivos.
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+© 2025 FriendCharge.
